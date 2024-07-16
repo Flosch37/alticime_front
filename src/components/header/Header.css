@@ -1,0 +1,104 @@
+/* Header.css */
+
+/* Style de base pour le header */
+.header {
+    background-color: #fff; /* Couleur de fond */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    padding: 10px 20px; /* Espacement interne */
+    display: flex; /* Utilisation de flexbox pour aligner les éléments */
+    justify-content: center; /* Centrer horizontalement */
+    flex-direction: column;
+    height: min-content;
+    transition: all 1s ease; /* Transition générale pour les modifications */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    height: 5px;
+}
+
+.contact-container p{
+   font-weight: bold;
+   color: orangered;
+}
+
+.header-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Style pour le conteneur du logo */
+.logo-container {
+    display: contents;
+    transition: all 0.3s ease;
+}
+
+/* Style pour l'image du logo */
+.logo {
+    width: 150px;
+    height: auto;
+    transition: width 0.5s ease-in-out;
+}
+
+/* Style pour la liste des liens de navigation */
+.nav-links {
+    list-style-type: none; /* Supprime les puces de la liste */
+    padding: 0;
+    display: flex;
+}
+
+/* Style pour les liens de navigation */
+.nav-links li {
+    margin-left: 20px; /* Espacement entre les liens */
+}
+
+/* Style pour les liens de navigation */
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    font-weight: 600;
+    padding-bottom: 4px;
+    font-family: cursive;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; /* Positionner la ligne en dessous du lien */
+    left: 0;
+    width: 0; /* Largeur initiale de la ligne */
+    height: 3px; /* Épaisseur de la ligne */
+    background-color: orangered; /* Couleur de la ligne */
+    transition: width 0.7s; /* Transition pour l'apparition de la ligne */
+}
+
+.nav-links li a:hover::after {
+    width: 100%; /* Largeur de la ligne au survol */
+}
+
+/* Appliquer l'animation lors du changement d'état */
+.scrolled {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5px;
+    animation-name: scrollAnimation; /* Utiliser l'animation définie */
+    animation-duration: 1s; /* Durée de l'animation */
+    animation-fill-mode: forwards; 
+    transition: all 1s ease-in-out;
+}
+
+/* Animation personnalisée pour le header scrolled */
+@keyframes scrollAnimation {
+    from {
+        height: 150px; /* Taille initiale du header */
+        background-color: transparent; /* Couleur de fond initiale */
+    }
+    to {
+        height: 60px; /* Taille finale du header */
+        background-color: #fff; /* Couleur de fond finale */
+    }
+}

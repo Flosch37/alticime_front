@@ -1,0 +1,45 @@
+/* Footer.css */
+
+/* Style pour le footer */
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* Style pour la section du footer */
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+/* Style pour chaque section du footer */
+.footer-section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Style pour les titres des sections du footer */
+.footer-section h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Style pour les liens dans la section du footer */
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}

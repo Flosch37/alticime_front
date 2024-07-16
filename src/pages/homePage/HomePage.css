@@ -1,0 +1,144 @@
+/* styles.css */
+
+/* Style de base pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style pour la classe home-page */
+.home-page {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style pour le conteneur du héros */
+.hero-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* Style pour l'image du héros */
+.hero {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Arrondir les coins */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+/* Style pour les paragraphes de la page d'accueil */
+.home-page p {
+    line-height: 1.6;
+    font-family: cursive;
+    font-size: larger;
+    font-weight: 900;
+}
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    color: white;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    background-color: burlywood;
+    border-radius: 35px;
+    padding: 6px;
+}
+  
+  
+
+
+/* HomePage.css */
+/* HomePage.css */
+
+/* Style pour le slider */
+.image-slider {
+    margin-top: 20px;
+}
+
+/* Style pour chaque série d'images dans le slider */
+.image-slider div {
+    display: flex !important;
+    justify-content: space-between;
+}
+
+/* Style pour chaque image dans le slider */
+.image-slider .image {
+    width: 30%; /* Largeur de chaque image par défaut */
+    height: auto;
+    border-radius: 8px; /* Arrondir les coins */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+
+/* HomePage.css */
+
+/* Styles pour le rappel-container */
+.rappel-container {
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Styles pour l'image de rappel */
+  .rappel-image {
+    width: 100%; 
+    border-radius: 8px;
+  }
+  
+  /* Styles pour le texte de rappel */
+  .rappel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+    padding: 10px 20px; /* Espacement intérieur */
+    border-radius: 5px; /* Coins arrondis */
+  }
+  
+  /* HomePage.css */
+
+/* Styles pour le bouton "Je laisse mon numéro" */
+.leave-number-button {
+    background-color: rgb(228, 90, 47);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: larger;
+    font-weight: 600;
+  }
+  
+  .leave-number-button:hover {
+    background-color: #0056b3; /* Couleur de fond au survol */
+  }
+  
+
+/* Media query pour ajuster le nombre d'images par slide en fonction de la taille de l'écran */
+@media screen and (max-width: 1200px) {
+    .image-slider .image {
+        width: 30%; /* Réduire la largeur des images pour les écrans moyens */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .image-slider .image {
+        width: 70%; /* Réduire la largeur des images pour les appareils mobiles */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .image-slider .image {
+        width: 90%; /* Réduire la largeur des images pour les petits appareils mobiles */
+    }
+}
+
